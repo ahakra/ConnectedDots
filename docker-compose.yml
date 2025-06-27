@@ -1,0 +1,16 @@
+﻿services:
+  connectDots:
+    image: mcr.microsoft.com/mssql/server
+    container_name: connectDots
+    environment:
+        - ACCEPT_EULA=Y
+        - SA_PASSWORD=password
+    restart: always
+    ports:
+        - "1433:1433"
+    
+  data.store.services:
+    image: data.store.services
+    build:
+      context: .
+      dockerfile: Data.Store.Services/Dockerfile
