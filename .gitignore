@@ -1,0 +1,23 @@
+# Rider / IntelliJ project files
+.idea/
+.idea.ConnectedDots/
+
+# Build output
+Data.Store.Services/bin/
+Data.Store.Services/obj/
+
+*/obj/
+*/bin/
+
+# Specific Debug build artifacts (redundant if /bin and /obj are ignored)
+Data.Store.Services/obj/Debug/
+
+# Optional: If using Visual Studio or JetBrains Rider, these are usually auto-ignored
+*.cache
+*.pdb
+*.dll
+*.json
+*.txt
+*.runtimeconfig.*
+*.sourcelink.*
+apphost
